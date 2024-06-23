@@ -1,5 +1,5 @@
-<! DOCTYPE html>
-<html lang="pt-br>
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
@@ -9,29 +9,69 @@
 </head>
 <body>
 	 <main>
-	 <h1>Saldo</h1>
-      <header>
-			<div>
-			  <h5>Total Balance</h5>
-			  <span id="balance">R$0.00</span>
+		<h1>Saldo</h1>
+		<header>
+				<div>
+				<h5>Total Balance</h5>
+				<span id="balance">R$0.00</span>
+				</div>
+				<div>
+				<h5>Income</h5>
+				<span id="income">R$0.00</span>
+				</div>
+				<div>
+				<h5>Expense</h5>
+				<span id="expense">R$0.00</span>
+				</div>
+		</header>
+		
+		<section>
+			<div class="menu">
+				<a class="botaoMenu" href="index.html">Balance</a>
+				<a class="botaoMenu" href="index.html">Graphics</a>
+				<a class="botaoMenu" href="index.html">Planning</a>
 			</div>
-			<div>
-			  <h5>Income</h5>
-			  <span id="income">R$0.00</span>
+		</section>
+		
+		<section>
+			<h3>Transactions</h3>
+			<ul id="transactionList"></ul>
+			<div id="status"></div>
+		</section>
+
+		<section>
+			<h3>Add Transaction</h3>
+			<div class="addTransaction">
+				<form id="transactionForm">
+					<div>
+						<label for="name">Name</label>
+						<input class="formNome" type="text" name="name" required/>
+					</div>
+					<div>
+						<label for="amount">Amount</label>
+						<input type="" name="amount" id="amount" value="0" required/>
+					</div>
+					<div>
+						<label for="date">Date</label>
+						<input type="date" name="date" required/>
+					</div>
+					<div>
+					</div>
+					<div class="multiplaEscolha">
+						<label for="Tipo">Type:</label>
+							<input type="radio" id="age1" name="Tipo" value="Pix">
+							<label for="age1">Pix</label><br>
+							<input type="radio" id="age2" name="Tipo" value="Paycheck">
+							<label for="age2">Paycheck</label><br>  
+							<input type="radio" id="age3" name="Tipo" value="Outro">
+							<label for="age3">Other</label><br>  
+					</div>
+					<input class="button"type="submit">
+				</form>
 			</div>
-			<div>
-			  <h5>Expense</h5>
-			  <span id="expense">R$0.00</span>
-			</div>
-      </header>
-	  
-	  <section>
-		<div class="menu">
-			<a class="botaoMenu" href="index.html">Balance</a>
-			<a class="botaoMenu" href="index.html">Graphics</a>
-			<a class="botaoMenu" href="index.html">Planning</a>
-		</div>
-	  </section>
+		</section>
+	  </main>
+	  <script src="script.js"></script>
 </body>
 </html>
 	
