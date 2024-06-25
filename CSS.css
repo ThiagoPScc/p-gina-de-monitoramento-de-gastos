@@ -110,6 +110,8 @@ form{
 	display: flex;
 	flex-wrap: wrap;
 	gap: 10px;
+	font-family: "Poppins", sans-serif;
+	font-weight:500;
 }
 
 form input{
@@ -148,6 +150,12 @@ form div:nth-child(n + 2){
 }
 .button:hover{
 	color: var(--shad-color);
+	background-color: var(--main-color);
+}
+.caixaForm{
+	Border:1px solid var(--text-color);
+	border-radius: 5px;
+	height: 30px;
 }
 
 
